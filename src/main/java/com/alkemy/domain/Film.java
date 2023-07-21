@@ -26,10 +26,10 @@ public class Film {
     private int rating;
 
     @Enumerated(EnumType.STRING)
-    private Type type;
+    private Category type;
 
     @ManyToOne
-    private Category category;
+    private Genre genre;
 
     @OneToMany(mappedBy = "personage")
     private List<PersonageFilm> personages;
